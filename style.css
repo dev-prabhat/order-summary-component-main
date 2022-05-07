@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pale-blue-color:hsl(225, 100%, 94%);
+    --bright-blue-color:hsl(245, 75%, 52%);
+    --light-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue-color:hsl(224, 23%, 55%);
+    --dark-blue-color: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background: no-repeat url(./images/pattern-background-desktop.svg) var(--pale-blue-color);
+}
+
+.card{
+    width: 28%;
+    margin:10vh auto;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title{
+    color: var(--desaturated-blue-color);
+}
+
+.hero-image-container{
+    width: 100%;
+    height: 25vh;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.card-description{
+    padding: 1rem 1.5rem; 
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem 0;
+    color: var(--dark-blue-color);
+}
+
+.card-subtitle{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: var(--desaturated-blue-color);   
+}
+
+.option-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-pale-blue);
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.option-container > *{
+    padding: 1rem;
+}
+
+.option-container > div{
+    display: flex;
+    align-items: center;
+}
+
+.plan-container{
+    padding: 0 1rem;
+}
+
+.annual-plan{
+    font-weight: 700;
+    color: var(--dark-blue-color);
+}
+
+.annual-plan-price{
+    font-weight: 700;
+    color: var(--desaturated-blue-color);  
+}
+
+.plan-change-btn{
+    display: block;
+    font-weight: 700;
+    /* font-size: 1rem; */
+    color: var(--bright-blue-color);
+}
+
+.plan-change-btn:hover{
+    text-decoration: none;
+}
+
+.btn-submit{
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--bright-blue-color);
+    color: var(--pale-blue-color);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--desaturated-blue-color)
+}
+
+.btn-submit:hover{
+    background-color: var(--desaturated-blue-color);
+}
+
+.btn-cancel{
+    padding: 0.5rem 0 ;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--desaturated-blue-color);   
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-cancel:hover{
+  color: var(--dark-blue-color);
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution > a {
+    text-decoration: none;
+}
+
+@media (max-width:375px){
+    .card{
+        width: 90%;
+    }
+}
