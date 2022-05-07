@@ -152,3 +152,9 @@ body{
         width: 90%;
     }
 }
+
+@media (min-width:375px) and (max-width:875px){
+    .card{
+        width: 70%;
+    }
+}
